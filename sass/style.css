@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'QanelasBlack';
+  src: url("../fonts/Qanelas/QanelasBlack.eot");
+  src: url("../fonts/Qanelas/QanelasBlack.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasBlack.woff2") format("woff2"), url("../fonts/Qanelas/QanelasBlack.woff") format("woff"), url("../fonts/Qanelas/QanelasBlack.ttf") format("truetype"), url("../fonts/Qanelas/QanelasBlack.svg#QanelasBlack") format("svg"); }
+@font-face {
+  font-family: 'QanelasBold';
+  src: url("../fonts/Qanelas/QanelasBold.eot");
+  src: url("../fonts/Qanelas/QanelasBold.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasBold.woff2") format("woff2"), url("../fonts/Qanelas/QanelasBold.woff") format("woff"), url("../fonts/Qanelas/QanelasBold.ttf") format("truetype"), url("../fonts/Qanelas/QanelasBold.svg#QanelasBold") format("svg"); }
+@font-face {
+  font-family: 'QanelasMedium';
+  src: url("../fonts/Qanelas/QanelasMedium.eot");
+  src: url("../fonts/Qanelas/QanelasMedium.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasMedium.woff2") format("woff2"), url("../fonts/Qanelas/QanelasMedium.woff") format("woff"), url("../fonts/Qanelas/QanelasMedium.ttf") format("truetype"), url("../fonts/Qanelas/QanelasMedium.svg#QanelasMedium") format("svg"); }
+@font-face {
+  font-family: 'QanelasLight';
+  src: url("../fonts/Qanelas/QanelasLight.eot");
+  src: url("../fonts/Qanelas/QanelasLight.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasLight.woff2") format("woff2"), url("../fonts/Qanelas/QanelasLight.woff") format("woff"), url("../fonts/Qanelas/QanelasLight.ttf") format("truetype"), url("../fonts/Qanelas/QanelasLight.svg#QanelasLight") format("svg"); }
+@font-face {
+  font-family: 'QanelasUltraLight';
+  src: url("../fonts/Qanelas/QanelasUltraLight.eot");
+  src: url("../fonts/Qanelas/QanelasUltraLight.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasUltraLight.woff2") format("woff2"), url("../fonts/Qanelas/QanelasUltraLight.woff") format("woff"), url("../fonts/Qanelas/QanelasUltraLight.ttf") format("truetype"), url("../fonts/Qanelas/QanelasUltraLight.svg#QanelasUltraLight") format("svg"); }
+body {
+  font-family: "QanelasMedium"; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+    padding-right: 15px;
+    padding-left: 15px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px; } }
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.block_title {
+  color: #fff;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 15px; }
+
+.p0 {
+  padding: 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.header {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 70px; }
+  .header__logo {
+    display: block;
+    float: left;
+    position: relative;
+    width: 25%; }
+
+.homescreen {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/car_main.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+  background-color: #000;
+  padding: 35px 0;
+  height: 600px; }
+
+.whatisrs {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 185px 0 0;
+  background-image: url("../img/bg_1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  margin-top: -125px;
+  z-index: 9; }
+  .whatisrs h2 {
+    font-family: "QanelasLight";
+    color: #FFF;
+    font-size: 37px; }
+  .whatisrs p {
+    color: #FFF;
+    font-size: 23px;
+    margin-top: 35px; }
+  .whatisrs h4 {
+    font-size: 28px;
+    color: #FFF; }
+  .whatisrs img {
+    display: block;
+    margin: 0 auto;
+    width: 70%; }
+
+.searchresult {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/bg_2.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 100%;
+  padding-top: 340px;
+  margin-top: -350px;
+  padding-bottom: 170px; }
+  .searchresult img {
+    display: block;
+    margin: 15px auto;
+    width: 70%; }
+  .searchresult h2 {
+    text-align: center;
+    color: #FFF;
+    font-size: 44px;
+    text-transform: uppercase;
+    font-family: "QanelasLight";
+    margin-bottom: 0; }
+  .searchresult h3 {
+    text-align: center;
+    color: #FFF;
+    font-size: 39px;
+    font-family: "QanelasLight"; }
+  .searchresult__model {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 25px; }
+    .searchresult__model h4 {
+      font-size: 30px;
+      color: #FFF;
+      font-family: "QanelasLight"; }
+    .searchresult__model p {
+      color: #FFF;
+      font-size: 15px;
+      display: block;
+      margin: 15px 0; }
+    .searchresult__model__input {
+      width: 80%;
+      display: block;
+      float: left;
+      height: 35px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      border-radius: 7px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #fff;
+      border: none;
+      outline-style: none;
+      font-size: 16px;
+      color: #000;
+      padding-left: 15px;
+      margin-bottom: 15px; }
+    .searchresult__model__sub {
+      display: block;
+      float: left;
+      width: 80%;
+      height: 35px;
+      border: none;
+      outline-style: none;
+      text-align: center;
+      color: #FFF;
+      font-size: 16px;
+      font-family: "QanelasBold";
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      border-radius: 7px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #d72129;
+      margin-bottom: 15px; }
+
+@media only screen and (max-width: 770px) {
+  .align-left {
+    text-align: center; }
+
+  .align-right {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

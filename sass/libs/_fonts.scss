@@ -1,0 +1,52 @@
+$l: 'QanelasLight';
+$ul: 'QanelasUltraLight';
+$bl: 'QanelasBlack';
+$b: 'QanelasBold';
+$m: 'QanelasMedium';
+
+@font-face {
+    font-family: 'QanelasBlack';
+    src: url('../fonts/Qanelas/QanelasBlack.eot');
+    src: url('../fonts/Qanelas/QanelasBlack.eot') format('embedded-opentype'),
+         url('../fonts/Qanelas/QanelasBlack.woff2') format('woff2'),
+         url('../fonts/Qanelas/QanelasBlack.woff') format('woff'),
+         url('../fonts/Qanelas/QanelasBlack.ttf') format('truetype'),
+         url('../fonts/Qanelas/QanelasBlack.svg#QanelasBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'QanelasBold';
+    src: url('../fonts/Qanelas/QanelasBold.eot');
+    src: url('../fonts/Qanelas/QanelasBold.eot') format('embedded-opentype'),
+         url('../fonts/Qanelas/QanelasBold.woff2') format('woff2'),
+         url('../fonts/Qanelas/QanelasBold.woff') format('woff'),
+         url('../fonts/Qanelas/QanelasBold.ttf') format('truetype'),
+         url('../fonts/Qanelas/QanelasBold.svg#QanelasBold') format('svg');
+}
+@font-face {
+    font-family: 'QanelasMedium';
+    src: url('../fonts/Qanelas/QanelasMedium.eot');
+    src: url('../fonts/Qanelas/QanelasMedium.eot') format('embedded-opentype'),
+         url('../fonts/Qanelas/QanelasMedium.woff2') format('woff2'),
+         url('../fonts/Qanelas/QanelasMedium.woff') format('woff'),
+         url('../fonts/Qanelas/QanelasMedium.ttf') format('truetype'),
+         url('../fonts/Qanelas/QanelasMedium.svg#QanelasMedium') format('svg');
+}
+@font-face {
+    font-family: 'QanelasLight';
+    src: url('../fonts/Qanelas/QanelasLight.eot');
+    src: url('../fonts/Qanelas/QanelasLight.eot') format('embedded-opentype'),
+         url('../fonts/Qanelas/QanelasLight.woff2') format('woff2'),
+         url('../fonts/Qanelas/QanelasLight.woff') format('woff'),
+         url('../fonts/Qanelas/QanelasLight.ttf') format('truetype'),
+         url('../fonts/Qanelas/QanelasLight.svg#QanelasLight') format('svg');
+}
+@font-face {
+    font-family: 'QanelasUltraLight';
+    src: url('../fonts/Qanelas/QanelasUltraLight.eot');
+    src: url('../fonts/Qanelas/QanelasUltraLight.eot') format('embedded-opentype'),
+         url('../fonts/Qanelas/QanelasUltraLight.woff2') format('woff2'),
+         url('../fonts/Qanelas/QanelasUltraLight.woff') format('woff'),
+         url('../fonts/Qanelas/QanelasUltraLight.ttf') format('truetype'),
+         url('../fonts/Qanelas/QanelasUltraLight.svg#QanelasUltraLight') format('svg');
+}

@@ -1,0 +1,15 @@
+.header {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	position: absolute;
+	z-index: 9;
+	top: 70px;
+	&__logo {
+		display: block;
+		float: left;
+		position: relative;
+		width: 25%;
+	}
+}
