@@ -63,6 +63,7 @@
 	padding-top: 390px;
 	margin-top: -380px;
 	padding-bottom: 170px;
+	z-index: 8;
 	img {
 		display: block;
 		margin: 15px auto;
@@ -207,5 +208,34 @@
 			}
 		}
 	}	
+}
+
+.stock_one {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	z-index: 7;
+	background-image: url('../img/bg_3.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 50%;
+	padding: 400px 0 90px;
+	background-color: #201D2D;
+	margin-top: -320px;
+	h2 {
+		color: #FFF;
+		text-transform: uppercase;
+		font-family: $b;
+		font-size: 36px;
+		text-align: center;
+	}
+	h4 {
+		color: #FFF;
+		text-align: center;
+		font-size: 26px;
+	}
 }
 

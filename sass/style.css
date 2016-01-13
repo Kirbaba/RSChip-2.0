@@ -59,6 +59,67 @@ ul {
 .align-right {
   text-align: right; }
 
+.flip-clock-wrapper ul {
+  margin: 5px 0;
+  width: 75px;
+  height: 120px;
+  background-color: #1B1F26; }
+  .flip-clock-wrapper ul:nth-of-type(odd) {
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -ms-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px; }
+    .flip-clock-wrapper ul:nth-of-type(odd) li a div.down {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 6px; }
+  .flip-clock-wrapper ul:nth-of-type(even) {
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0; }
+    .flip-clock-wrapper ul:nth-of-type(even) li a div.down {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 0px; }
+  .flip-clock-wrapper ul li {
+    line-height: 120px; }
+
+.flip-clock-wrapper ul li a div.up:after {
+  content: none; }
+
+.flip-clock-wrapper ul li a div div.inn {
+  text-shadow: 0 1px 2px #000;
+  background-color: #1b1f26;
+  font-size: 90px;
+  color: #FFF; }
+
+.flip-clock-wrapper {
+  font-family: "QanelasBold"; }
+
+.flip-clock-divider {
+  height: 165px;
+  width: 10px; }
+
+.flip-clock-dot.bottom {
+  bottom: 80px;
+  display: none; }
+
+.flip-clock-dot.top {
+  top: 50px;
+  display: none; }
+
+.flip-clock-divider .flip-clock-label {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 21px;
+  right: -107px;
+  font-family: "QanelasMedium"; }
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -107px; }
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -114px; }
+
 .header {
   display: block;
   float: left;
@@ -131,7 +192,8 @@ ul {
   background-position: 50% 0%;
   padding-top: 390px;
   margin-top: -380px;
-  padding-bottom: 170px; }
+  padding-bottom: 170px;
+  z-index: 8; }
   .searchresult img {
     display: block;
     margin: 15px auto;
@@ -261,6 +323,32 @@ ul {
         color: #fead1d; }
       .searchresult__numbers__fourth p {
         font-size: 11px; }
+
+.stock_one {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 7;
+  background-image: url("../img/bg_3.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+  padding: 400px 0 90px;
+  background-color: #201D2D;
+  margin-top: -320px; }
+  .stock_one h2 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: "QanelasBold";
+    font-size: 36px;
+    text-align: center; }
+  .stock_one h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px; }
 
 @media only screen and (max-width: 1199px) {
   .whatisrs {

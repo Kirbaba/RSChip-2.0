@@ -88,9 +88,10 @@
 
 	<section class="stock_one">
 		<div class="container">
-			<div class="clockContainer">
-				<h2>До конца акции осталось:</h2>
+			<div class="clockContainer">				
 				<div class="clock"></div>
+				<h2>Закажи прямо сейчас </h2>
+				<h4>и получи <b>бесплатную доставку на дом!</b></h4>
 			</div>
 		</div>
 	</section>
