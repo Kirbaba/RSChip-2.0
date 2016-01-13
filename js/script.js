@@ -52,5 +52,18 @@ $(function() {
             scrollTop: top
         }, 1000);
     });
+
+
+    var clock;
+    clock = $('.clock').FlipClock({
+        clockFace: 'DailyCounter',
+        autoStart: false,   
+        lang: 'ru'  
+    });    
+
+    clock.setTime(440880);
+    clock.setCountdown(true);
+    clock.start();
+
 });
 

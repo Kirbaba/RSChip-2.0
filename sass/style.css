@@ -96,10 +96,11 @@ ul {
   padding: 185px 0 0;
   background-image: url("../img/bg_1.png");
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  margin-top: -125px;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+  margin-top: -135px;
   z-index: 9; }
   .whatisrs h2 {
     font-family: "QanelasLight";
@@ -127,9 +128,9 @@ ul {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 50% 100%;
-  padding-top: 340px;
-  margin-top: -350px;
+  background-position: 50% 0%;
+  padding-top: 390px;
+  margin-top: -380px;
   padding-bottom: 170px; }
   .searchresult img {
     display: block;
@@ -146,13 +147,14 @@ ul {
     text-align: center;
     color: #FFF;
     font-size: 39px;
-    font-family: "QanelasLight"; }
+    font-family: "QanelasLight";
+    margin-top: 0; }
   .searchresult__model {
     display: block;
     float: left;
     position: relative;
     width: 100%;
-    margin-top: 25px; }
+    margin-top: 70px; }
     .searchresult__model h4 {
       font-size: 30px;
       color: #FFF;
@@ -161,7 +163,7 @@ ul {
       color: #FFF;
       font-size: 15px;
       display: block;
-      margin: 15px 0; }
+      margin: 25px 0; }
     .searchresult__model__input {
       width: 80%;
       display: block;
@@ -185,6 +187,7 @@ ul {
       float: left;
       width: 80%;
       height: 35px;
+      line-height: 35px;
       border: none;
       outline-style: none;
       text-align: center;
@@ -198,13 +201,102 @@ ul {
       -o-background-clip: padding-box;
       background-clip: padding-box;
       background-color: #d72129;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .searchresult__model__sub:hover {
+        background-color: #95171c; }
+  .searchresult__numbers {
+    display: block;
+    position: relative;
+    height: 300px;
+    margin: 25px 7%;
+    background-image: url("../img/numbs.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain; }
+    .searchresult__numbers__first, .searchresult__numbers__second, .searchresult__numbers__third, .searchresult__numbers__fourth {
+      position: absolute;
+      width: 19%;
+      text-align: center;
+      margin-left: 20px;
+      top: 48%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+        color: #0074ac;
+        font-family: "QanelasMedium"; }
+      .searchresult__numbers__first p, .searchresult__numbers__second p, .searchresult__numbers__third p, .searchresult__numbers__fourth p {
+        margin-top: 0;
+        font-size: 18px; }
+    .searchresult__numbers__second {
+      left: 19%; }
+      .searchresult__numbers__second h3 {
+        font-size: 30px;
+        color: #d76348; }
+      .searchresult__numbers__second p {
+        font-size: 16px; }
+    .searchresult__numbers__third {
+      right: 21%;
+      left: inherit; }
+      .searchresult__numbers__third h3 {
+        font-size: 30px;
+        color: #fc8b3c; }
+      .searchresult__numbers__third p {
+        font-size: 14px; }
+    .searchresult__numbers__fourth {
+      left: inherit;
+      right: 0;
+      margin: 0 15px 0 0; }
+      .searchresult__numbers__fourth h3 {
+        font-size: 30px;
+        color: #fead1d; }
+      .searchresult__numbers__fourth p {
+        font-size: 11px; }
 
+@media only screen and (max-width: 1199px) {
+  .whatisrs {
+    padding-top: 110px; }
+
+  .searchresult__numbers {
+    margin: 25px 0;
+    font-size: 25px; }
+    .searchresult__numbers__first, .searchresult__numbers__second, .searchresult__numbers__third, .searchresult__numbers__fourth {
+      margin-left: 10px; }
+      .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
+        font-size: 25px; }
+    .searchresult__numbers__fourth {
+      margin-right: 5px; } }
+@media only screen and (max-width: 991px) {
+  .searchresult__numbers {
+    margin: 25px 7%; }
+    .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
+      font-size: 30px; } }
 @media only screen and (max-width: 770px) {
   .align-left {
     text-align: center; }
 
   .align-right {
-    text-align: center; } }
+    text-align: center; }
+
+  .whatisrs {
+    padding-top: 160px;
+    margin-top: -165px; } }
+@media only screen and (max-width: 650px) {
+  .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
+    font-size: 25px; } }
+@media only screen and (max-width: 500px) {
+  .searchresult__numbers {
+    height: 215px; }
+    .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
