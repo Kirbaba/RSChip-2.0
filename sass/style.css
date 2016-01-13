@@ -59,11 +59,15 @@ ul {
 .align-right {
   text-align: right; }
 
+.red {
+  color: #F00A0D; }
+
 .flip-clock-wrapper ul {
   margin: 5px 0;
   width: 75px;
   height: 120px;
-  background-color: #1B1F26; }
+  background-color: #1B1F26;
+  position: relative; }
   .flip-clock-wrapper ul:nth-of-type(odd) {
     -webkit-border-radius: 6px 0 0 6px;
     -moz-border-radius: 6px 0 0 6px;
@@ -75,6 +79,23 @@ ul {
     .flip-clock-wrapper ul:nth-of-type(odd) li a div.down {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 6px; }
+    .flip-clock-wrapper ul:nth-of-type(odd):before {
+      content: "";
+      width: 2px;
+      height: 8px;
+      background-color: #70767E;
+      position: absolute;
+      left: 2px;
+      top: 50%;
+      z-index: 9;
+      -webkit-box-shadow: 2px 0px 14px 0px #3a3d42;
+      -moz-box-shadow: 2px 0px 14px 0px #3a3d42;
+      box-shadow: 2px 0px 14px 0px #3a3d42;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
   .flip-clock-wrapper ul:nth-of-type(even) {
     -webkit-border-radius: 0 6px 6px 0;
     -moz-border-radius: 0 6px 6px 0;
@@ -86,6 +107,23 @@ ul {
     .flip-clock-wrapper ul:nth-of-type(even) li a div.down {
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 0px; }
+    .flip-clock-wrapper ul:nth-of-type(even):after {
+      content: "";
+      width: 2px;
+      height: 8px;
+      background-color: #70767E;
+      position: absolute;
+      right: 2px;
+      top: 50%;
+      z-index: 9;
+      -webkit-box-shadow: -2px 0px 14px 0px #3a3d42;
+      -moz-box-shadow: -2px 0px 14px 0px #3a3d42;
+      box-shadow: -2px 0px 14px 0px #3a3d42;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
   .flip-clock-wrapper ul li {
     line-height: 120px; }
 
@@ -366,6 +404,88 @@ ul {
     display: block;
     width: 100%;
     text-align: center; }
+
+.missing {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/bg_4.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  margin-top: -150px;
+  z-index: 9;
+  padding-top: 150px; }
+  .missing h2 {
+    font-size: 41px;
+    margin-bottom: 25px; }
+    .missing h2 b {
+      font-family: "QanelasBold"; }
+  .missing__text p {
+    font-size: 18px; }
+    .missing__text p span.missing__higher {
+      font-size: 28px;
+      font-family: "QanelasBlack"; }
+  .missing img {
+    display: block;
+    margin: 15px 0;
+    float: right;
+    width: 70%; }
+
+.imac {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/bg_5.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  margin-top: -450px;
+  padding-top: 500px; }
+  .imac__computer {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    background-position: 50% 0;
+    background-image: url("../img/apple-computer.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 500px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4% 12% 31% 3%; }
+    .imac__computer:before, .imac__computer:after {
+      display: table;
+      content: " "; }
+    .imac__computer:after {
+      clear: both; }
+  .imac__text {
+    display: block;
+    float: left;
+    position: relative;
+    padding: 0 10%; }
+    .imac__text h2 {
+      font-size: 37px;
+      font-family: "QanelasBold";
+      text-align: center;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      color: #FFF; }
+    .imac__text h3 {
+      font-size: 27px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #FFFEFA; }
 
 @media only screen and (max-width: 1199px) {
   .whatisrs {

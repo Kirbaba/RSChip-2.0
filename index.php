@@ -95,6 +95,53 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="missing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<h2>Что вы упускаете <b><span class="red">без</span> RS чип тюнига </b>?</h2>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+					<div class="missing__text">
+						<p><span class="red missing__higher">RS тюнинг двигателя</span> – это ваша возможность за 
+							счет надежного улучшения <b>достичь идеальной производительности мотора 
+							и оптимальных общих характеристик автомобиля</b>. 
+							Так, например, доводка режимов работы ДВС с атмосферным забором воздуха 
+							на фоне коррекции зажигания смеси и подачи горючего, прибавляет мощности на <span class="red"><b>9-12%</b></span>, 
+							а RS чип тюнинг силового агрегата с турбонаддувом, 
+							приводит к повышению коэффициента полезного действия к показателю, 
+							превышающему стандартный на <span class="red"><b>35-40%</b></span>.</p>					
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<img src="<?php bloginfo('template_directory'); ?>/img/chip.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="imac">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="imac__computer">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/RgLWYId6_Tk" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="imac__text">
+						<h2>ВСЕ О ЧИП - ТЮНИНГЕ</h2>
+						<h3><span class="red">ЧИП ТЮНИНГ ДВИГАТЕЛЯ</span> — 
+							УВЕЛИЧЕНИЕ МОЩНОСТИ И
+							УЛУЧШЕНИЕ ДИНАМИКИ 
+							АВТОМОБИЛЯ</h3>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
     
 <?php wp_footer(); ?>
 </body>

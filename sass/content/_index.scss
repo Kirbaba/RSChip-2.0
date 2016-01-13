@@ -249,3 +249,91 @@
 	}
 }
 
+.missing {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	background-image: url('../img/bg_4.png');
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+    margin-top: -150px;
+    z-index: 9;
+    padding-top: 150px;
+	h2 {
+		font-size: 41px;
+		margin-bottom: 25px;
+		b {
+			font-family: $b;
+		}	
+	}
+	&__text {
+		p {
+			font-size: 18px;			
+			span.missing__higher {
+				font-size: 28px;
+				font-family: $bl;
+			}
+		}
+	}
+	img {
+		display: block;
+		margin: 15px 0;
+		float: right;
+		width: 70%;
+	}
+}
+
+.imac {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	background-image: url('../img/bg_5.png');
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+    margin-top: -450px;
+    padding-top: 500px; 
+    &__computer {
+    	display: block;
+    	float: left;
+    	position: relative;
+    	width: 100%;
+    	background-position: 50% 0;
+    	background-image: url('../img/apple-computer.png');
+    	background-repeat: no-repeat;
+    	-webkit-background-size: contain;
+    	     -o-background-size: contain;
+    	        background-size: contain;
+    	height: 500px; 
+    	@include inside-pad; 
+	    padding: 4% 12% 31% 3%;    	
+    }
+    &__text {
+    	display: block;
+    	float: left;
+    	position: relative;
+    	padding: 0 10%;
+    	h2 {
+    		font-size: 37px;
+    		font-family: $b;
+    		text-align: center;
+    		margin-bottom: 25px;
+    		text-transform: uppercase;
+    		color: #FFF;
+    	}
+    	h3 {
+    		font-size: 27px;
+    		text-transform: uppercase;
+    		text-align: center;
+    		color: #FFFEFA;
+    	}
+    }
+}
+
