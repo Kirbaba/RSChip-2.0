@@ -68,7 +68,10 @@ ul {
     -webkit-border-radius: 6px 0 0 6px;
     -moz-border-radius: 6px 0 0 6px;
     -ms-border-radius: 6px 0 0 6px;
-    border-radius: 6px 0 0 6px; }
+    border-radius: 6px 0 0 6px;
+    border-style: solid;
+    border-color: #22262d;
+    border-width: 1px 0 1px 1px; }
     .flip-clock-wrapper ul:nth-of-type(odd) li a div.down {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 6px; }
@@ -76,7 +79,10 @@ ul {
     -webkit-border-radius: 0 6px 6px 0;
     -moz-border-radius: 0 6px 6px 0;
     -ms-border-radius: 0 6px 6px 0;
-    border-radius: 0 6px 6px 0; }
+    border-radius: 0 6px 6px 0;
+    border-style: solid;
+    border-color: #22262d;
+    border-width: 1px 1px 1px 0; }
     .flip-clock-wrapper ul:nth-of-type(even) li a div.down {
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 0px; }
@@ -96,7 +102,7 @@ ul {
   font-family: "QanelasBold"; }
 
 .flip-clock-divider {
-  height: 165px;
+  height: 185px;
   width: 10px; }
 
 .flip-clock-dot.bottom {
@@ -119,6 +125,9 @@ ul {
 
 .flip-clock-divider.seconds .flip-clock-label {
   right: -114px; }
+
+.flip-clock-wrapper .flip {
+  box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.7); }
 
 .header {
   display: block;
@@ -349,6 +358,14 @@ ul {
     color: #FFF;
     text-align: center;
     font-size: 26px; }
+  .stock_one .flip-clock-wrapper {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 25px; }
+  .stock_one .clockContainer {
+    display: block;
+    width: 100%;
+    text-align: center; }
 
 @media only screen and (max-width: 1199px) {
   .whatisrs {

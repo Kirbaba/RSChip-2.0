@@ -5,6 +5,9 @@
 	background-color: #1B1F26;
 	&:nth-of-type(odd) {
 		@include border-radius(6px 0 0 6px);
+		border-style: solid;
+		border-color: #22262d;
+		border-width: 1px 0 1px 1px;
 		li a div.down {
 			border-bottom-left-radius: 0px;
 		  	border-bottom-right-radius: 6px;
@@ -12,6 +15,9 @@
 	}
 	&:nth-of-type(even) {
 		@include border-radius(0 6px 6px 0);
+		border-style: solid;
+		border-color: #22262d;
+		border-width:  1px 1px 1px 0;
 		li a div.down {
 			border-bottom-left-radius: 6px;
 		  	border-bottom-right-radius: 0px;
@@ -36,7 +42,7 @@
   }
 
   .flip-clock-divider {
-  	height: 165px;
+  	height: 185px;
   	width: 10px;
   }
 
@@ -65,3 +71,6 @@
 	right: -114px;
 }
 
+.flip-clock-wrapper .flip {
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.7);
+}
