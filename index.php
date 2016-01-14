@@ -202,13 +202,69 @@
 					<h2>НАШИ ОТЗЫВЫ</h2>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-					
+					<div class="reviews__carousel">
+						<div class="reviews__carousel--item">
+							<div class="reviews__carousel--item--img">
+								<img src="<?php bloginfo('template_directory'); ?>/img/jas.png" alt="">
+							</div>
+							<div class="reviews__carousel--item--desc">
+								<h4>Lorem ipsum dolor sit amet.</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quam, neque. Quae reprehenderit eius quam veritatis facilis, nihil quos excepturi mollitia repellat nostrum dignissimos repellendus ut reiciendis accusantium, earum tenetur aspernatur saepe modi dolorem ipsa perspiciatis sapiente repudiandae similique laudantium blanditiis. Quam voluptatibus, quaerat nobis et laborum explicabo ipsum, tempore.</p>
+								<p class="reviews--name">Lorem ipsum.</p>
+							</div>
+						</div>
+						<div class="reviews__carousel--item">
+							<div class="reviews__carousel--item--img">
+								<img src="<?php bloginfo('template_directory'); ?>/img/jas.png" alt="">
+							</div>
+							<div class="reviews__carousel--item--desc">
+								<h4>Lorem ipsum dolor sit amet.</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quam, neque. Quae reprehenderit eius quam veritatis facilis, nihil quos excepturi mollitia repellat nostrum dignissimos repellendus ut reiciendis accusantium, earum tenetur aspernatur saepe modi dolorem ipsa perspiciatis sapiente repudiandae similique laudantium blanditiis. Quam voluptatibus, quaerat nobis et laborum explicabo ipsum, tempore.</p>
+								<p class="reviews--name">Lorem ipsum.</p>
+							</div>
+						</div>
+						<div class="reviews__carousel--item">
+							<div class="reviews__carousel--item--img">
+								<img src="<?php bloginfo('template_directory'); ?>/img/jas.png" alt="">
+							</div>
+							<div class="reviews__carousel--item--desc">
+								<h4>Lorem ipsum dolor sit amet.</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quam, neque. Quae reprehenderit eius quam veritatis facilis, nihil quos excepturi mollitia repellat nostrum dignissimos repellendus ut reiciendis accusantium, earum tenetur aspernatur saepe modi dolorem ipsa perspiciatis sapiente repudiandae similique laudantium blanditiis. Quam voluptatibus, quaerat nobis et laborum explicabo ipsum, tempore.</p>
+								<p class="reviews--name">Lorem ipsum.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				
 			</div>
 		</div>
 	</section>
+
+	<section class="map">
+		<div id="map_canvas" style="width:100%; height:100%"></div>
+	</section>
     
+    <footer class="footer">
+		<div class="container">
+			<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+				<div class="soc">			
+					<a href="#nowhere"><i class="fa fa-facebook"></i></a>
+					<a href="#nowhere"><i class="fa fa-twitter"></i></a>
+					<a href="#nowhere"><i class="fa fa-linkedin"></i></a>
+					<a href="#nowhere"><i class="fa fa-google-plus"></i></a>
+					<a href="#nowhere"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-3 col-sm-offset-4 col-xs-12">
+				<p class="footer__copyr">
+					ООО "Импульс" <br>
+					ОГРН 1147847193548 <br>	 
+					ИНН 7841503051 <br>
+					© Copyright 2015
+				</p>
+			</div>
+		</div>
+	</footer>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -1,0 +1,28 @@
+.footer{
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 150px;
+	padding: 50px 0;
+	border-top: 5px solid ;
+	background-color: #000;
+	.soc {
+		a {
+			color: #FFF;
+			text-decoration: none;
+			margin-right: 15px;
+			font-size: 25px;
+			@include transition(.3s);
+			&:hover {
+				color: #F00A0D;
+			}
+		}
+	}
+	&__copyr{
+		float: right;
+		color: #FFF;
+		font-size: 14px;
+		text-align: left ;
+	}
+}

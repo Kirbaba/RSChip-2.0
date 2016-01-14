@@ -457,14 +457,68 @@
 	float: left;
 	position: relative;
 	width: 100%;
-	padding: 100px 0 100px;
-	background-color: #FDFDFD;
-	margin-top: -170px;
+	padding: 210px 0 180px;
+	background-image: url('../img/777.png');
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 50% 100%;
+	margin-top: -300px;
+	z-index: 6;
 	h2 {
 		font-size: 35px;
 		color: #1D1D1D;
 		text-transform: uppercase;
 		text-align: center;
 	}
+	&__carousel {
+		margin: 0 25px;
+		&--item {
+			&--img {
+				width: 25%;
+				display: block;
+				float: left;
+				@include overflow-img;
+				width: 145px;
+				height: 145px;
+				@include border-radius(50%);
+				margin-right: 25px;	
+				margin-top: 15px;			
+				img {
+					max-width: 150%;				
+				}
+			}
+			&--desc {
+				width: 75%;
+				display: block;
+				float: left;
+				@include inside-pad;
+				padding-left: 25px;
+				border-left: 2px solid #282828;
+				h4 {
+					font-size: 22px;
+					font-family: $b;
+				}
+				p {
+					font-size: 16px;
+				}
+				p.reviews--name {
+					font-weight: bold;
+					text-align: right;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
+
+.map {
+	display: block;
+	float: left;
+	position: relative;
+	height: 650px;
+	width: 100%;
+	margin-top: -345px;
+	z-index: 5;
 }
 
