@@ -126,7 +126,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="imac__computer">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/RgLWYId6_Tk" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/RgLWYId6_Tk?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -140,6 +140,72 @@
 				</div>
 			</div>
 			
+		</div>
+	</section>
+
+	<section class="advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="advantages__bonuse ">						
+						<i class="bonus1"></i>
+						<p>Плавность хода</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="advantages__bonuse advantages__bonuse2">
+						<i class="bonus2"></i>
+						<p>Безопасность при обгонах</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="advantages__bonuse advantages__bonuse3">
+						<i class="bonus3"></i>
+						<p>Уверенность езды в городских условиях</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="advantages__bonuse advantages__bonuse4">
+						<i class="bonus4"></i>
+						<p>Экономия топлива</p>
+					</div>
+				</div>
+				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+					<h2 class="red">ПРЕИМУЩЕСТВА ТОВАРА</h2>
+					<p class="red">За счет <b>увеличения мощности</b> вы получаете все эти <b>бонусы</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="stock_2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+					<div class="stock_2__title">
+						<h2>Закажи прямо сейчас </h2>
+						<h4>и получи <b>бесплатную доставку на дом!</b></h4>
+					</div>	
+					<div class="stock_2__clock">	
+						<h3>До конца акции осталось:</h3>		
+						<div class="clock_2"></div>	
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+					<h2>НАШИ ОТЗЫВЫ</h2>
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+					
+				</div>
+				
+			</div>
 		</div>
 	</section>
     

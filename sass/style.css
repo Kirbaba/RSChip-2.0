@@ -64,7 +64,7 @@ ul {
 
 .flip-clock-wrapper ul {
   margin: 5px 0;
-  width: 75px;
+  width: 65px;
   height: 120px;
   background-color: #1B1F26;
   position: relative; }
@@ -166,6 +166,28 @@ ul {
 
 .flip-clock-wrapper .flip {
   box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.7); }
+
+.stock_2 .flip-clock-wrapper ul {
+  width: 50px;
+  height: 80px; }
+.stock_2 li {
+  line-height: 80px; }
+.stock_2 .flip-clock-wrapper ul li a div div.inn {
+  font-size: 60px; }
+.stock_2 .flip-clock-wrapper ul li {
+  line-height: 80px; }
+.stock_2 .flip-clock-divider {
+  height: 135px; }
+.stock_2 .flip-clock-divider .flip-clock-label {
+  font-size: 16px; }
+.stock_2 .flip-clock-divider .days .flip-clock-label {
+  right: -69px; }
+.stock_2 .flip-clock-divider .hours .flip-clock-label {
+  right: -79px; }
+.stock_2 .flip-clock-divider.minutes .flip-clock-label {
+  right: -72px; }
+.stock_2 .flip-clock-divider.seconds .flip-clock-label {
+  right: -80px; }
 
 .header {
   display: block;
@@ -463,7 +485,7 @@ ul {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 4% 12% 31% 3%; }
+    padding: 3% 11% 31% 3%; }
     .imac__computer:before, .imac__computer:after {
       display: table;
       content: " "; }
@@ -487,6 +509,115 @@ ul {
       text-align: center;
       color: #FFFEFA; }
 
+.advantages {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 180px; }
+  .advantages h2 {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-align: center;
+    z-index: 9;
+    position: relative; }
+  .advantages p {
+    font-size: 30px;
+    text-align: center;
+    z-index: 9;
+    position: relative; }
+  .advantages__bonuse {
+    display: block;
+    width: 270px;
+    height: 270px;
+    background-repeat: no-repeat;
+    padding: 50px 5px;
+    position: relative; }
+    .advantages__bonuse p {
+      color: #2f2f2f;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      height: 55px; }
+    .advantages__bonuse i {
+      display: block;
+      width: 180px;
+      height: 130px;
+      margin: 0 auto;
+      position: relative;
+      bottom: 0; }
+    .advantages__bonuse .bonus1, .advantages__bonuse .bonus2, .advantages__bonuse .bonus3, .advantages__bonuse .bonus4 {
+      background-image: url("../img/bonus1.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+    .advantages__bonuse .bonus2 {
+      background-image: url("../img/bonus2.png"); }
+    .advantages__bonuse .bonus3 {
+      background-image: url("../img/bonus3.png"); }
+    .advantages__bonuse .bonus4 {
+      background-image: url("../img/bonus4.png"); }
+
+.stock_2 {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 7;
+  background-image: url("../img/bg_phone.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0;
+  padding: 445px 0 300px;
+  margin-top: -250px; }
+  .stock_2 .stock_2__title {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px; }
+    .stock_2 .stock_2__title h2 {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-family: "QanelasBold";
+      text-align: center; }
+    .stock_2 .stock_2__title h4 {
+      color: #FFF;
+      font-size: 26px;
+      text-align: center; }
+  .stock_2__clock {
+    display: block;
+    width: 100%;
+    text-align: center; }
+    .stock_2__clock h3 {
+      font-size: 26px;
+      text-align: center;
+      font-family: "QanelasLight";
+      text-transform: uppercase;
+      color: #FFF; }
+    .stock_2__clock .flip-clock-wrapper {
+      display: inline-block;
+      width: auto;
+      margin-bottom: 25px; }
+
+.reviews {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 100px 0 100px;
+  background-color: #FDFDFD;
+  margin-top: -170px; }
+  .reviews h2 {
+    font-size: 35px;
+    color: #1D1D1D;
+    text-transform: uppercase;
+    text-align: center; }
+
 @media only screen and (max-width: 1199px) {
   .whatisrs {
     padding-top: 110px; }
@@ -499,12 +630,19 @@ ul {
       .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
         font-size: 25px; }
     .searchresult__numbers__fourth {
-      margin-right: 5px; } }
+      margin-right: 5px; }
+
+  .imac__computer {
+    height: 360px; } }
 @media only screen and (max-width: 991px) {
   .searchresult__numbers {
     margin: 25px 7%; }
     .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
-      font-size: 30px; } }
+      font-size: 30px; }
+
+  .imac__computer {
+    height: 500px;
+    padding: 3% 18% 25% 11%; } }
 @media only screen and (max-width: 770px) {
   .align-left {
     text-align: center; }
@@ -514,14 +652,40 @@ ul {
 
   .whatisrs {
     padding-top: 160px;
-    margin-top: -165px; } }
+    margin-top: -165px; }
+
+  .imac__computer {
+    height: 350px;
+    width: 450px;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    float: none;
+    padding: 2% 7% 15% 2%;
+    margin: 0 auto; } }
 @media only screen and (max-width: 650px) {
   .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
-    font-size: 25px; } }
+    font-size: 25px; }
+
+  .imac__computer {
+    padding: 2% 8% 18% 2%; } }
+@media only screen and (max-width: 550px) {
+  .imac__computer {
+    padding: 3% 10% 21% 3%; } }
 @media only screen and (max-width: 500px) {
   .searchresult__numbers {
     height: 215px; }
     .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  .imac__computer {
+    height: 340px;
+    width: 400px;
+    padding: 3% 10% 28% 3%; } }
+@media only screen and (max-width: 420px) {
+  .imac__computer {
+    height: 250px;
+    width: 300px;
+    padding: 3% 10% 25% 3%; } }
 
 /*# sourceMappingURL=style.css.map */

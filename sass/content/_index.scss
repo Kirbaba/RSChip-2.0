@@ -313,7 +313,7 @@
     	        background-size: contain;
     	height: 500px; 
     	@include inside-pad; 
-	    padding: 4% 12% 31% 3%;    	
+	    padding: 3% 11% 31% 3%;    	
     }
     &__text {
     	display: block;
@@ -335,5 +335,136 @@
     		color: #FFFEFA;
     	}
     }
+}
+
+.advantages {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 180px;
+	h2 {
+		text-transform: uppercase;
+		font-size: 45px;
+		text-align: center;
+		z-index: 9;
+		position: relative;
+	}
+	p {
+		font-size: 30px;
+		text-align: center;
+		z-index: 9;
+		position: relative;
+	}
+	&__bonuse {
+		display: block;
+		width: 270px;
+		height: 270px;
+		background-repeat: no-repeat;
+		padding: 50px 5px;
+		position: relative;
+		p {
+			color: #2f2f2f;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			display: block;
+			height: 55px;
+		}
+		i {
+			display: block;
+			width: 180px;
+			height: 130px;
+			margin: 0 auto;
+			position: relative;
+			bottom: 0;
+		}
+		.bonus1 {
+			background-image: url("../img/bonus1.png");
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.bonus2 {
+			@extend .bonus1;
+			background-image: url("../img/bonus2.png");
+		}
+		.bonus3 {
+			@extend .bonus1;
+			background-image: url("../img/bonus3.png") ;
+		}
+		.bonus4 {
+			@extend .bonus1;
+			background-image: url("../img/bonus4.png");
+		}
+	}
+}
+
+.stock_2 {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	z-index: 7;
+	background-image: url('../img/bg_phone.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 50% 0;
+    padding: 445px 0 300px;
+	margin-top: -250px;
+	.stock_2__title {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		margin-bottom: 80px;
+		h2 {
+			color: #FFF;
+			text-transform: uppercase;
+			font-size: 36px;
+			font-family: $b;
+			text-align: center;
+		}
+		h4 {
+			color: #FFF;
+			font-size: 26px;
+			text-align: center;
+		}
+	}
+	&__clock {
+		display: block;
+		width: 100%;
+		text-align: center;
+		h3 {
+			font-size: 26px;
+			text-align: center;
+			font-family: $l;
+			text-transform: uppercase;
+			color: #FFF;
+		}
+		.flip-clock-wrapper {
+			display: inline-block;
+			width: auto;
+			margin-bottom: 25px;
+		}	
+	}
+}
+
+.reviews {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 100px 0 100px;
+	background-color: #FDFDFD;
+	margin-top: -170px;
+	h2 {
+		font-size: 35px;
+		color: #1D1D1D;
+		text-transform: uppercase;
+		text-align: center;
+	}
 }
 

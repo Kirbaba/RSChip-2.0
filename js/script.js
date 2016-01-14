@@ -65,5 +65,16 @@ $(function() {
     clock.setCountdown(true);
     clock.start();
 
+    var clock2;
+    clock2 = $('.clock_2').FlipClock({
+        clockFace: 'DailyCounter',
+        autoStart: false,   
+        lang: 'ru'  
+    });    
+
+    clock2.setTime(440880);
+    clock2.setCountdown(true);
+    clock2.start();
+
 });
 
