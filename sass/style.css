@@ -560,7 +560,8 @@ ul {
     height: 270px;
     background-repeat: no-repeat;
     padding: 50px 5px;
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
     .advantages__bonuse p {
       color: #2f2f2f;
       font-size: 20px;
@@ -654,27 +655,30 @@ ul {
     .reviews__carousel--item--img {
       width: 25%;
       display: block;
-      float: left;
-      overflow: hidden;
-      width: 145px;
-      height: 145px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      border-radius: 50%;
-      margin-right: 25px;
-      margin-top: 15px; }
-      .reviews__carousel--item--img img {
-        min-width: 100%;
-        height: auto;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); }
-      .reviews__carousel--item--img img {
-        max-width: 150%; }
+      float: left; }
+      .reviews__carousel--item--img--box {
+        display: block;
+        float: left;
+        overflow: hidden;
+        width: 145px;
+        height: 145px;
+        margin-top: 15px;
+        margin-left: 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+        .reviews__carousel--item--img--box img {
+          min-width: 100%;
+          height: auto;
+          position: relative;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); }
+        .reviews__carousel--item--img--box img {
+          max-width: 150%; }
     .reviews__carousel--item--desc {
-      width: 75%;
+      width: 74%;
       display: block;
       float: left;
       -webkit-box-sizing: border-box;
@@ -777,7 +781,35 @@ ul {
     background-size: 100%;
     float: none;
     padding: 2% 7% 15% 2%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .missing {
+    margin-top: -210px;
+    padding-top: 210px; }
+    .missing img {
+      display: block;
+      margin: 15px auto;
+      float: none;
+      width: 70%; }
+
+  .imac {
+    padding-bottom: 80px; }
+
+  .stock_2 {
+    text-shadow: 0px 0px 5px black; }
+
+  .reviews {
+    padding-top: 280px; }
+
+  .footer {
+    height: auto; }
+
+  .soc {
+    text-align: center; }
+
+  .footer__copyr {
+    float: none;
+    text-align: center; } }
 @media only screen and (max-width: 650px) {
   .searchresult__numbers__first h3, .searchresult__numbers__second h3, .searchresult__numbers__third h3, .searchresult__numbers__fourth h3 {
     font-size: 25px; }
@@ -796,11 +828,141 @@ ul {
   .imac__computer {
     height: 340px;
     width: 400px;
-    padding: 3% 10% 28% 3%; } }
+    padding: 3% 10% 28% 3%; }
+
+  .flip-clock-wrapper ul {
+    margin: 5px 0;
+    width: 35px;
+    height: 75px; }
+    .flip-clock-wrapper ul li {
+      line-height: 75px; }
+
+  .flip-clock-wrapper ul li a div div.inn {
+    font-size: 50px; }
+
+  .flip-clock-divider {
+    height: 145px; }
+
+  .flip-clock-divider .flip-clock-label {
+    right: -73px; }
+
+  .flip-clock-divider.minutes .flip-clock-label {
+    right: -73px; }
+
+  .flip-clock-divider.seconds .flip-clock-label {
+    right: -78px; }
+
+  .stock_2 .flip-clock-wrapper ul {
+    margin: 5px 0;
+    width: 35px;
+    height: 75px; }
+    .stock_2 .flip-clock-wrapper ul li {
+      line-height: 75px; }
+  .stock_2 .flip-clock-wrapper ul li a div div.inn {
+    font-size: 50px; }
+  .stock_2 .flip-clock-divider {
+    height: 125px; }
+
+  .reviews__carousel--item--desc {
+    border: none;
+    width: 100%; }
+
+  .reviews__carousel--item--img--box {
+    float: none;
+    margin: 10px auto; }
+
+  .reviews__carousel--item--img {
+    width: 100%; } }
 @media only screen and (max-width: 420px) {
   .imac__computer {
     height: 250px;
     width: 300px;
-    padding: 3% 10% 25% 3%; } }
+    padding: 3% 10% 25% 3%; }
+
+  .stock_one .flip-clock-wrapper {
+    margin: 25px 0; }
+
+  .flip-clock-wrapper ul {
+    width: 10px;
+    height: 50px; }
+    .flip-clock-wrapper ul li {
+      line-height: 50px; }
+
+  .flip-clock-wrapper ul li a div div.inn {
+    font-size: 35px; }
+
+  .flip-clock-divider {
+    height: 100px;
+    width: 1px; }
+
+  .stock_2 .flip-clock-wrapper {
+    margin: 25px 0; }
+  .stock_2 .flip-clock-wrapper ul {
+    width: 10px;
+    height: 50px; }
+    .stock_2 .flip-clock-wrapper ul li {
+      line-height: 50px; }
+  .stock_2 .flip-clock-wrapper ul li a div div.inn {
+    font-size: 35px; }
+  .stock_2 .flip-clock-divider {
+    height: 100px;
+    width: 1px; } }
+@media only screen and (max-width: 320px) {
+  .header__logo {
+    width: 100%; }
+    .header__logo img {
+      width: 50%;
+      display: block;
+      margin: 0 auto; }
+
+  .flip-clock-wrapper ul {
+    padding: 15px; }
+
+  .flip-clock-divider .flip-clock-label {
+    font-size: 12px; }
+
+  .flip-clock-divider .flip-clock-label {
+    right: -52px; }
+
+  .flip-clock-divider.minutes .flip-clock-label {
+    right: -52px; }
+
+  .flip-clock-divider.seconds .flip-clock-label {
+    right: -54px; }
+
+  .reviews .flip-clock-wrapper ul {
+    padding: 15px; }
+  .reviews .flip-clock-divider .flip-clock-label {
+    font-size: 12px; }
+  .reviews .stock_2 .flip-clock-divider.minutes .flip-clock-label {
+    right: -56px; }
+  .reviews .stock_2 .flip-clock-divider.seconds .flip-clock-label {
+    right: -61px; }
+
+  .advantages h2 {
+    font-size: 32px; }
+
+  .advantages p {
+    font-size: 24px; }
+
+  .imac__computer {
+    padding: 3% 12% 30% 3%; }
+
+  .imac {
+    margin-top: -545px;
+    padding-top: 550px; }
+
+  .searchresult__numbers {
+    margin: 25px -15px; }
+
+  .searchresult__numbers__first, .searchresult__numbers__second, .searchresult__numbers__third, .searchresult__numbers__fourth {
+    margin-left: 0; }
+
+  .whatisrs img {
+    width: 90%; }
+
+  .whatisrs {
+    margin-top: -190px;
+    padding-top: 180px; } }
 
 /*# sourceMappingURL=style.css.map */

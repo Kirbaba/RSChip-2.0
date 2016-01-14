@@ -364,6 +364,7 @@
 		background-repeat: no-repeat;
 		padding: 50px 5px;
 		position: relative;
+		margin: 0 auto;
 		p {
 			color: #2f2f2f;
 			font-size: 20px;
@@ -477,19 +478,22 @@
 			&--img {
 				width: 25%;
 				display: block;
-				float: left;
-				@include overflow-img;
-				width: 145px;
-				height: 145px;
-				@include border-radius(50%);
-				margin-right: 25px;	
-				margin-top: 15px;			
-				img {
-					max-width: 150%;				
+				float: left;						
+				&--box {
+					display: block;float: left;
+					@include overflow-img;	
+					width: 145px;
+					height: 145px;	
+					margin-top: 15px;
+					margin-left: 10px;
+					@include border-radius(50%);
+					img {
+						max-width: 150%;				
+					}
 				}
 			}
 			&--desc {
-				width: 75%;
+				width: 74%;
 				display: block;
 				float: left;
 				@include inside-pad;
