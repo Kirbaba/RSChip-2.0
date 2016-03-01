@@ -23,7 +23,51 @@
 	</header>
 
 	<section class="homescreen">
-		
+		<div class="container">
+			<div class="row">
+		<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+			<form action="#" method="post">
+				<div class="test"></div>
+				<div class="customSelect">
+					<select id="mark" data-placeholder="Марка автомобиля">
+						<option>Выберите марку автомобиля</option>
+						<?= selectMark();?>
+					</select>
+				</div>
+				<div class="customSelect">
+					<select id="model" data-placeholder="Модель">
+						<option>Выберите модель автомобиля</option>
+					</select>
+				</div>
+				<div class="customSelect">
+					<select id="version" data-placeholder="Двигатель">
+						<option>Выберите тип двигателя</option>
+					</select>
+				</div>
+				<div class="customSelect">
+					<select id="year" data-placeholder="Год выпуска">
+						<option>Выберите год выпуска</option>
+					</select>
+				</div>
+				<div class="calc__check">
+					<input type="checkbox" name="vpusk"/>
+					<label for="vpusk">Установлен "холодный впуск"</label>
+				</div>
+				<div class="calc__check">
+					<input type="checkbox" name="filter"/>
+					<label for="filter">Фильтр нулевого сопротивления</label>
+				</div>
+				<div class="calc__check">
+					<input type="checkbox" name="mehanic"/>
+					<label for="mehanic">Механическая КПП</label>
+				</div>
+
+				<div>
+					<input type="submit" id="submitAuto" class="calc__submit" value="Расчитать прирост" />
+				</div>
+			</form>
+		</div>
+				</div></div>
 	</section>
 
 	<section class="whatisrs">

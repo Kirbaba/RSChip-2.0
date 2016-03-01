@@ -27,7 +27,6 @@ function loadScript() {
 
 window.onload = loadScript;
 
-
 $(function() {
 
     $(window).scroll(function() {
@@ -50,7 +49,6 @@ $(function() {
             scrollTop: top
         }, 1000);
     });
-
 
     var clock;
     clock = $('.clock').FlipClock({
@@ -91,3 +89,94 @@ $(function() {
 
 });
 
+/*----------------SELECT--------------*/
+$(document).ready(function(){
+    $('#version').hide();
+    $('#model').hide();
+    $('#year').hide();
+    $('#submitAuto').hide();
+
+    $('#mark').on('change', function () {
+        var val = $(this).val();
+        $('#version').html('<option value="0">Выберите тип двигателя</option>');
+        $('#year').html('<option value="0">Выберите год</option>');
+        //alert(val);
+        if(val!=0){
+            $.ajax({
+                url: myajax.url, //url, к которому обращаемся
+                type: "POST",
+                data: "action=getModel&idMark=" + val, //данные, которые передаем. Обязательно для action указываем имя нашего хука
+                success: function (data) {
+                    $('#model').html(data);
+                    $('#model').fadeIn();
+                    $('input, select').trigger('refresh');
+                }
+            });
+        }
+
+    });
+    $('#model').on('change', function () {
+        var val = $(this).val();
+        //alert(val);
+        if(val!=0){
+            $.ajax({
+                url: myajax.url, //url, к которому обращаемся
+                type: "POST",
+                data: "action=getVersion&idModel=" + val, //данные, которые передаем. Обязательно для action указываем имя нашего хука
+                success: function (data) {
+                    $('#version').html(data);
+                    $('#version').fadeIn();
+                    $('input, select').trigger('refresh');
+                }
+            });
+        }
+    });
+    $('#version').on('change', function () {
+        var val = $(this).val();
+        //alert(val);
+        if(val!=0){
+            $.ajax({
+                url: myajax.url, //url, к которому обращаемся
+                type: "POST",
+                data: "action=getYear", //данные, которые передаем. Обязательно для action указываем имя нашего хука
+                success: function (data) {
+                    $('#year').html(data);
+                    $('#year').fadeIn();
+                    $('input, select').trigger('refresh');
+                }
+            });
+        }
+    });
+
+    $('#year').on('change', function(){
+        var val = $(this).val();
+        //alert(val);
+        if(val!=0){
+            $('#submitAuto').fadeIn();
+        }
+    });
+
+    $('#submitAuto').on('click', function () {
+        var val = $('#version').val();
+        var year = $('#year').val();
+
+        if(val!=0){
+            $.ajax({
+                url: myajax.url, //url, к которому обращаемся
+                type: "POST",
+                data: "action=getInfo&idVersion="+val, //данные, которые передаем. Обязательно для action указываем имя нашего хука
+                success: function (data) {
+                    var unpackedData = JSON.parse(data.slice(0,-1));
+
+                    $("#hpChipInfo").html(unpackedData.hpChip);
+                    $("#hpInfo").html(unpackedData.hp);
+                    $("#nmDiffInfo").html('+' + unpackedData.nmDiff );
+                    $("#hpDiffInfo").html('+' + unpackedData.hpDiff );
+                    $("#versionInfo").html(unpackedData.mark + ' \\ ' + unpackedData.model + ' \\ ' + unpackedData.version + ' \\ ' + year );
+                    $('input, select').trigger('refresh');
+                }
+            });
+        }
+        return false;
+    });
+});
