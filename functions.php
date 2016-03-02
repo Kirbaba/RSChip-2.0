@@ -182,5 +182,194 @@ function getInfo(){
     echo $jsonData;
 }
 
+/*------------------------------------------------ REVIEWS -----------------------------------------------------------*/
 
+add_action('init', 'myCustomInitReviews');
+
+function myCustomInitReviews()
+{
+    $labels = array(
+        'name' => 'Отзывы', // Основное название типа записи
+        'singular_name' => 'Отзывы', // отдельное название записи типа Book
+        'add_new' => 'Добавить отзыв',
+        'add_new_item' => 'Добавить новый отзыв',
+        'edit_item' => 'Редактировать отзыв',
+        'new_item' => 'Новый отзыв',
+        'view_item' => 'Посмотреть отзыв',
+        'search_items' => 'Найти отзыв',
+        'not_found' => 'Отзывов не найдено',
+        'not_found_in_trash' => 'В корзине отзывов не найдено',
+        'parent_item_colon' => '',
+        'menu_name' => 'Отзывы'
+
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array('title', 'editor','thumbnail')
+    );
+    register_post_type('reviews', $args);
+}
+
+function reviewShortcode()
+{
+    $args = array(
+        'post_type' => 'reviews',
+        'post_status' => 'publish',
+        'posts_per_page' => -1);
+
+    $my_query = null;
+    $my_query = new WP_Query($args);
+
+    $parser = new Parser();
+    $parser->render(TM_DIR . '/view/reviews.php', ['my_query' => $my_query]);
+}
+
+add_shortcode('reviews', 'reviewShortcode');
+
+add_action('save_post', 'myExtraFieldsUpdate', 10, 1);
+
+/* Сохраняем данные, при сохранении поста */
+function myExtraFieldsUpdate($post_id)
+{
+    if (!isset($_POST['extra'])) return false;
+    foreach ($_POST['extra'] as $key => $value) {
+        if (empty($value)) {
+            delete_post_meta($post_id, $key); // удаляем поле если значение пустое
+            continue;
+        }
+
+        update_post_meta($post_id, $key, $value); // add_post_meta() работает автоматически
+    }
+    return $post_id;
+}
+
+function extraFieldsName($post)
+{
+    ?>
+    <p>
+        <span>Имя: </span>
+        <input type="text" name='extra[name]' value="<?php echo get_post_meta($post->ID, "name", 1); ?>">
+    </p>
+    <?php
+}
+
+function myExtraFieldsMenu()
+{
+    add_meta_box('extra_name', 'Имя', 'extraFieldsName', 'reviews', 'normal', 'high');
+}
+
+add_action('add_meta_boxes', 'myExtraFieldsMenu', 1);
+
+/*------------------------------------------------ REVIEWS -----------------------------------------------------------*/
+
+/*--------------------------------------------- НАСТРОЙКИ ТЕМЫ -------------------------------------------------------*/
+
+add_action('customize_register', function($customizer){
+    /*Меню настройки контактов*/
+    $customizer->add_section(
+        'social_section',
+        array(
+            'title' => 'Социальные сети',
+            'description' => 'Ссылки на соц.сети',
+            'priority' => 35,
+        )
+    );
+
+    $customizer->add_setting(
+        'fb_textbox',
+        array('default' => '')
+    );
+    $customizer->add_setting(
+        'tw_textbox',
+        array('default' => '')
+    );
+    $customizer->add_setting(
+        'li_textbox',
+        array('default' => '')
+    );
+    $customizer->add_setting(
+        'gp_textbox',
+        array('default' => '')
+    );
+    $customizer->add_setting(
+        'inst_textbox',
+        array('default' => '')
+    );
+
+
+    $customizer->add_control(
+        'fb_textbox',
+        array(
+            'label' => 'Facebook',
+            'section' => 'social_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'tw_textbox',
+        array(
+            'label' => 'Twitter',
+            'section' => 'social_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'li_textbox',
+        array(
+            'label' => 'LinkedIn',
+            'section' => 'social_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'gp_textbox',
+        array(
+            'label' => 'Google+',
+            'section' => 'social_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'inst_textbox',
+        array(
+            'label' => 'Instagram',
+            'section' => 'social_section',
+            'type' => 'text',
+        )
+    );
+
+});
+
+/*------------------------------------------- КОНЕЦ НАСТРОЕК ТЕМЫ ----------------------------------------------------*/
+
+/*--------------------------------------------- ОТПРАВКА ПОЧТЫ -------------------------------------------------------*/
+
+add_action('wp_ajax_sendParams', 'sendParams');
+add_action('wp_ajax_nopriv_sendParams', 'sendParams');
+
+function sendParams(){
+    $mail = $_POST['mail'];
+    $auto = $_POST['auto'];
+    $hp = $_POST['hp'];
+    $hpchip = $_POST['hpchip'];
+    $nmdiff = $_POST['nmdiff'];
+    $hpdiff = $_POST['hpdiff'];
+
+    $str = "Автомобиль: $auto<br> Мощность после задушки: $hp<br> Настоящая заводская мощность: $hpchip <br> Прирост мощности: <br> Лошадиные силы: $hpdiff <br> Крутящий момент: $nmdiff";
+
+    mail($mail, "Результаты прироста для вашего автомобиля",$str , "Content-type: text/html; charset=UTF-8\r\n");
+    die();
+}
+
+/*------------------------------------------ КОНЕЦ ОТПРАВКИ ПОЧТЫ ----------------------------------------------------*/
 

@@ -83,6 +83,8 @@
 					<h4>RS чип тюнинг – это значительные улучшения функциональных возможностей силового агрегата, включая экономию и увеличение ресурса. </h4>
 				</div>
 				<div class="col-lg-8 col-md-7 col-sm-6 col-xs-12">
+					<span id="hpChipInfo"></span>
+					<span id="hpInfo"></span>
 					<img src="<?php bloginfo('template_directory'); ?>/img/Sonic-turbocharged-engine.png" alt="">
 				</div>
 			</div>
@@ -100,10 +102,8 @@
 					<img src="<?php /*bloginfo('template_directory');*/ ?>/img/bmw_icon.png" alt="placeholder+image">-->
 				</div>
 				<!--<a href="#nowhere">сменить авто</a>-->
-				<form action="#">
 					<input type="email" class="searchresult__model__input" placeholder="Введите e-mail">
-					<input type="submit" class="searchresult__model__sub" value="Отправить себе на e-mail"></input>
-				</form>
+					<input type="submit" class="searchresult__model__sub" value="Отправить себе на e-mail">
 			</div>
 			<div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
 				<h2>ЧИП-ТЮНИНГ RSCHIP</h2>
@@ -247,6 +247,7 @@
 				</div>
 				<div class="col-lg-9 col-md-10 col-sm-12 col-xs-12">
 					<div class="reviews__carousel">
+						<?php echo do_shortcode('[reviews]') ?>
 						<div class="reviews__carousel--item">
 							<div class="reviews__carousel--item--img">
 								<div class="reviews__carousel--item--img--box">
@@ -298,11 +299,11 @@
 		<div class="container">
 			<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
 				<div class="soc">			
-					<a href="#nowhere"><i class="fa fa-facebook"></i></a>
-					<a href="#nowhere"><i class="fa fa-twitter"></i></a>
-					<a href="#nowhere"><i class="fa fa-linkedin"></i></a>
-					<a href="#nowhere"><i class="fa fa-google-plus"></i></a>
-					<a href="#nowhere"><i class="fa fa-instagram"></i></a>
+					<a href="<?php echo get_theme_mod('fb_textbox'); ?>"><i class="fa fa-facebook"></i></a>
+					<a href="<?php echo get_theme_mod('tw_textbox'); ?>"><i class="fa fa-twitter"></i></a>
+					<a href="<?php echo get_theme_mod('li_textbox'); ?>"><i class="fa fa-linkedin"></i></a>
+					<a href="<?php echo get_theme_mod('gp_textbox'); ?>"><i class="fa fa-google-plus"></i></a>
+					<a href="<?php echo get_theme_mod('inst_textbox'); ?>"><i class="fa fa-instagram"></i></a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-3 col-sm-offset-4 col-xs-12">

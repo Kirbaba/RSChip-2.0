@@ -179,4 +179,22 @@ $(document).ready(function(){
         }
         return false;
     });
+
+    $(document).on('click','.searchresult__model__sub', function(){
+        var auto =  $("#versionInfo").html();
+        var hpchip =  $("#hpChipInfo").html();
+        var hp =  $("#hpInfo").html();
+        var nmdiff =  $("#nmDiffInfo").html();
+        var hpdiff =  $("#hpDiffInfo").html();
+        var mail =  $(".searchresult__model__input").val();
+
+        $.ajax({
+            url: myajax.url, //url, к которому обращаемся
+            type: "POST",
+            data: "action=sendParams&mail="+mail+"&auto="+auto+"&hpchip="+hpchip+"&hp="+hp+"&nmdiff="+nmdiff+"&hpdiff="+hpdiff, //данные, которые передаем. Обязательно для action указываем имя нашего хука
+            success: function (data) {
+               console.log(data);
+            }
+        });
+    });
 });
